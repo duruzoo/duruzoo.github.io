@@ -1,0 +1,122 @@
+:root {
+  --main-color: #f8c9d4;   /* 핑크 */
+  --accent-color: #94d1c3; /* 민트 */
+  --bg-color: #fff8f8;
+  --text-color: #5d5d5d;
+}
+
+body {
+  font-family: 'Gaegu', 'Noto Sans KR', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* 헤더 */
+.header {
+  padding: 2.5rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #f8c9d4 0%, #fefaf6 100%);
+  border-bottom: 4px dotted #f8c9d4;
+}
+
+/* 네비게이션 */
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  background: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  border: 2px solid var(--main-color);
+  transition: all 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: var(--main-color);
+  color: white;
+}
+
+/* 섹션 */
+.section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border: 3px dashed var(--accent-color);
+}
+
+/* 작품 */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.work-item {
+  background: #fffdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #f8c9d4;
+  transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+/* 블로그 */
+.blog-post {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 6px solid var(--main-color);
+  background: #fffdfd;
+  border-radius: 10px;
+}
+
+/* 연락처 */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--main-color);
+  border-radius: 12px;
+  background: #fffafc;
+  font-family: inherit;
+}
+
+/* 버튼 */
+.btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: var(--main-color);
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
