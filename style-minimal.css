@@ -52,7 +52,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* 작품 그리드 */
+/* 취미공 그리드 */
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -71,12 +71,12 @@ body {
   transform: translateY(-5px);
 }
 
-/* 블로그 */
+/* 나의 이야기 */
 .blog-post {
   margin-bottom: 2rem;
 }
 
-/* 연락처 */
+/* E-mail/SNS */
 .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 0.8rem;
